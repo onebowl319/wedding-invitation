@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>모바일 청첩장</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- 1. 썸네일 (대문사진) -->
+  <section class="thumbnail" id="home">
+      <div class="thumbnail-content">
+        <div class="text-wrapper">
+          <h1>6월의 결혼식</h1>
+          <div class="location-date">
+            <span>롯데월드 3층 전통혼례식장</span>
+            <span>2025.06.01 일요일 PM 12:00</span>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- 툴바 -->
+   <!--
+  <nav class="toolbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#intro">신랑 & 신부</a></li>
+      <li><a href="#dday">Date</a></li>
+      <li><a href="#gallery">갤러리</a></li>
+    </ul>
+  </nav>
+  -->
+
+  <section id="intro">
+    <div class="intro-content">
+      <div class="intro-text">
+          <h2>INVITATION</h2>
+      </div>
+      <div class="intro-description">
+          <p>서로의 꿈이 하나가 되는 날</p>
+          <p>소중한 분들과 함께하고 싶습니다.</p>
+          <p>따뜻한 축복으로 자리를 빛내 주세요.</p>
+      </div>
+      <div class="intro-photo">
+          <img src="images/bride-and-groom.jpg" alt="신랑 신부 사진">
+      </div>
+  </div>
+  </section>
+
+  <section id="d-day-section">
+    <div class="d-day-content">
+      <div class="d-day-text">
+        <h2>06</h2>
+      </div>
+      <div class="calendar">
+        <div class="calendar-header">
+            <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+        </div>
+        <div class="calendar-days" id="calendar-days">
+            <!-- 날짜가 JavaScript에서 자동으로 생성됨 -->
+        </div>
+        <div class="d-day-text">
+          <p id="days-left">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location" class="location-section">
+    <h2>오시는 길</h2>
+    <!-- 주소 -->
+    <p class="location-address">롯데월드 3층 민속박물관 전통혼례식장</p>
+
+    <!-- 장소 사진 -->
+    <div class="location-image">
+        <img src="images/location.png" alt="결혼식 장소 약도" />
+    </div>
+
+    <div class="form-group">
+      <div class="col-md-12">
+          <div class="my-3 text-center">
+              <a href="https://naver.me/Gxkehh7q">
+                  <img alt="naver-map" class="map-icon" id="naver-map"
+                       src="images/naver-map.png"/>
+              </a>
+              <a href="https://kko.kakao.com/qjVxVZwsYI">
+                  <img alt="kakao-map" class="map-icon" id="kakao-map"
+                       src="images/kakao-map.png"/>
+              </a>
+              <a href="https://maps.app.goo.gl/dGhTstPnfRWJL8Ek9">
+                  <img alt="google-map" class="map-icon" id="google-map"
+                       src="images/google-map.png"/>
+              </a>
+          </div>
+          <!-- 구글 지도 (iframe) -->
+          <div class="location-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.859192760887!2d127.09545247642833!3d37.51123902729613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5a6dfe712d5%3A0xee0393bca89030ac!2z66Gv642w7JuU65Oc66-87IaN67CV66y86rSA!5e0!3m2!1sko!2skr!4v1739671520222!5m2!1sko!2skr"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+      </div>
+  </div>
+
+
+</section>
+
+
+
+  <section id="gallery">
+    <h2>포토 갤러리</h2>
+    <p>포토 갤러리 내용...</p>
+  </section>
+
+  <footer>
+    <p>문의: example@email.com</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
