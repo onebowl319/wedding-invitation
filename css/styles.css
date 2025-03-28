@@ -228,7 +228,6 @@ html {
 /*오시는길*/
 .location-section {
   text-align: center;
-  padding: 50px;
   background-color: #ffffff;
 }
 
@@ -378,7 +377,6 @@ a {
 /* 마음 전하는 곳 */
 .account-section {
   text-align: center;
-  padding: 50px;
   background-color: #ffffff;
 }
 

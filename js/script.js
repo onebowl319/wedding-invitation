@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
     plugins: [lgZoom, lgThumbnail],
     speed: 500,
     download: false,
+    hash: false,
   });
 });
 
