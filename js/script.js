@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 500,
     download: false,
     hash: false,
-    closeIcon: false,
+    closeIcon: true,
   });
 });
 
