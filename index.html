@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>모바일 청첩장</title>
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Masonry -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+  <!-- LightGallery -->
+  <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+
 </head>
 <body>
   <!-- 1. 썸네일 (대문사진) -->
@@ -13,8 +23,8 @@
         <div class="text-wrapper">
           <h1>6월의 결혼식</h1>
           <div class="location-date">
-            <span>롯데월드 3층 전통혼례식장</span>
             <span>2025.06.01 일요일 PM 12:00</span>
+            <span>롯데월드 3층 전통혼례식장</span>
           </div>
         </div>
       </div>
@@ -35,17 +45,18 @@
   <section id="intro">
     <div class="intro-content">
       <div class="intro-text">
-          <h2>INVITATION</h2>
+          <h2>초대합니다</h2>
       </div>
       <div class="intro-description">
-          <p>서로의 꿈이 하나가 되는 날</p>
-          <p>소중한 분들과 함께하고 싶습니다.</p>
-          <p>따뜻한 축복으로 자리를 빛내 주세요.</p>
+          <p>한사발 | 채지선</p>
+          <p>서로가 하나가 되는 날</p>
+          <p>소중한 분들과 함께하고 싶습니다</p>
+          <p>따뜻한 축복으로 자리를 빛내 주세요</p>
       </div>
       <div class="intro-photo">
           <img src="images/bride-and-groom.jpg" alt="신랑 신부 사진">
       </div>
-  </div>
+    </div> 
   </section>
 
   <section id="d-day-section">
@@ -67,54 +78,169 @@
     </div>
   </section>
 
-  <section id="location" class="location-section">
-    <h2>오시는 길</h2>
-    <!-- 주소 -->
-    <p class="location-address">롯데월드 3층 민속박물관 전통혼례식장</p>
-
-    <!-- 장소 사진 -->
-    <div class="location-image">
-        <img src="images/location.png" alt="결혼식 장소 약도" />
+  <section id="gallery" class="masonry-gallery">
+    <div class="intro-text">
+      <h2>갤러리</h2>
     </div>
+    <div id="lightgallery" class="grid" >
+      <a href="images/pic1.jpg" class="grid-item">
+        <img src="images/pic1.jpg" alt="사진1">
+      </a>
+      <a href="images/pic2.jpg" class="grid-item">
+        <img src="images/pic2.jpg" alt="사진2">
+      </a>
+      <a href="images/pic3.jpg" class="grid-item">
+        <img src="images/pic3.jpg" alt="사진3">
+      </a>
+      <a href="images/pic4.jpg" class="grid-item">
+        <img src="images/pic4.jpg" alt="사진1">
+      </a>
+      <a href="images/pic5.jpg" class="grid-item">
+        <img src="images/pic5.jpg" alt="사진2">
+      </a>
+      <a href="images/pic6.jpg" class="grid-item">
+        <img src="images/pic6.jpg" alt="사진3">
+      </a>
+      <a href="images/pic7.jpg" class="grid-item">
+        <img src="images/pic7.jpg" alt="사진1">
+      </a>
+      <a href="images/pic8.jpg" class="grid-item">
+        <img src="images/pic8.jpg" alt="사진2">
+      </a>
+    </div>
+  </section>
 
-    <div class="form-group">
-      <div class="col-md-12">
-          <div class="my-3 text-center">
-              <a href="https://naver.me/Gxkehh7q">
-                  <img alt="naver-map" class="map-icon" id="naver-map"
-                       src="images/naver-map.png"/>
-              </a>
-              <a href="https://kko.kakao.com/qjVxVZwsYI">
-                  <img alt="kakao-map" class="map-icon" id="kakao-map"
-                       src="images/kakao-map.png"/>
-              </a>
-              <a href="https://maps.app.goo.gl/dGhTstPnfRWJL8Ek9">
-                  <img alt="google-map" class="map-icon" id="google-map"
-                       src="images/google-map.png"/>
-              </a>
-          </div>
-          <!-- 구글 지도 (iframe) -->
-           <!--
-          <div class="location-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.859192760887!2d127.09545247642833!3d37.51123902729613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5a6dfe712d5%3A0xee0393bca89030ac!2z66Gv642w7JuU65Oc66-87IaN67CV66y86rSA!5e0!3m2!1sko!2skr!4v1739671520222!5m2!1sko!2skr"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>-->
-      </div>
+<section id="account" class="account-section">
+  <div class="intro-text">
+    <h2>마음 전하는 곳</h2>
+  </div>
+  <!-- 토글 버튼 -->
+  <div class="account-toggle">
+    <button class="account-toggle-btn active" data-target="groom">신랑 측</button>
+    <button class="account-toggle-btn" data-target="bride">신부 측</button>
   </div>
 
+  <!-- 신랑 계좌 -->
+  <div class="account-list" id="groom-account">
+    <div class="account-item">
+      <strong>신랑 한사발</strong>
+      <div class="account-row">
+        <p>국민은행 123456-78-901234</p>
+        <button class="copy-btn" data-account="국민은행 123456-78-901234">복사</button>
+      </div>
+      <strong>아버지 한수상</strong>
+      <div class="account-row">
+        <p>국민은행 123456-78-901234</p>
+        <button class="copy-btn" data-account="국민은행 123456-78-901234">복사</button>
+      </div>
+      <strong>어머니 심인순</strong>
+      <div class="account-row">
+        <p>국민은행 123456-78-901234</p>
+        <button class="copy-btn" data-account="국민은행 123456-78-901234">복사</button>
+      </div>
+    </div>
+  </div>
 
+  <!-- 신부 계좌 -->
+  <div class="account-list hidden" id="bride-account">
+    <div class="account-item">
+      <strong>신부 채지선</strong>
+      <div class="account-row">
+        <p>국민은행 123456-78-901234</p>
+        <button class="copy-btn" data-account="국민은행 123456-78-901234">복사</button>
+      </div>
+      <strong>아버지 채교선</strong>
+      <div class="account-row">
+        <p>국민은행 123456-78-901234</p>
+        <button class="copy-btn" data-account="국민은행 123456-78-901234">복사</button>
+      </div>
+      <strong>어머니 박정순</strong>
+      <div class="account-row">
+        <p>국민은행 123456-78-901234</p>
+        <button class="copy-btn" data-account="국민은행 123456-78-901234">복사</button>
+      </div>
+    </div>
+  </div>
 </section>
 
 
 
-  <section id="gallery">
-    <h2>포토 갤러리</h2>
-    <p>포토 갤러리 내용...</p>
-  </section>
+
+<section id="location" class="location-section">
+  <div class="intro-text">
+    <h2>오시는 길</h2>
+  </div>
+    <!-- 토글 버튼 -->
+  <div class="location-toggle">
+    <button class="location-toggle-btn active" data-target="map">지도</button>
+    <button class="location-toggle-btn" data-target="sketch_map">약도</button>
+  </div>
+
+  <!-- 지도 -->
+  <div class="location-map" id="map">
+    <img src="images/location_map.png" alt="결혼식 지도" />
+  </div>
+
+  <div class="location-map hidden" id="map-hidden">
+    <img src="images/location_sketch_map.png" alt="결혼식 약도" />
+  </div>
+  <p class="location-address">🤵롯데월드 3층 민속박물관 전통혼례식장👰</p>
+
+  <div class="form-group">
+    <div class="col-md-12">
+        <div class="my-3 text-center">
+            <a href="https://naver.me/Gxkehh7q">
+                <img alt="naver-map" class="map-icon" id="naver-map"
+                     src="images/map_icon/naver-map.png"/>
+            </a>
+            <a href="https://kko.kakao.com/qjVxVZwsYI">
+                <img alt="kakao-map" class="map-icon" id="kakao-map"
+                     src="images/map_icon/kakao-map.png"/>
+            </a>
+            <a href="https://maps.app.goo.gl/dGhTstPnfRWJL8Ek9">
+                <img alt="google-map" class="map-icon" id="google-map"
+                     src="images/map_icon/google-map.png"/>
+            </a>
+            <a href="https://tmap.life/609fa540">
+                <img alt="T-map" class="map-icon" id="T-map"
+                    src="images/map_icon/t-map.png"/>
+            </a>
+        </div>
+    </div>
+  </div>
+
+  <!-- 지하철 -->
+  <div class="location-item">
+    <h4>🚉 지하철</h4>
+    <p>2호선, 8호선 <strong>잠실역 하차</strong> → <strong>4번 출구</strong> → 롯데월드 정문 → 전용 엘리베이터 (3층)</p>
+  </div>
+
+  <!-- 버스 -->
+  <div class="location-item">
+    <h4>🚌 버스</h4>
+    <p><strong>잠실역, 롯데월드 하차</strong> → 롯데월드 정문 → 전용 엘리베이터 (3층)</p>
+    <ul>
+      <li><strong>초록(지선):</strong> 3317, 3412, 3414, 4318, 4319</li>
+      <li><strong>파랑(간선):</strong> 301, 341, 360, 362</li>
+      <li><strong>빨강(광역):</strong> 1007-1, 1100, 1700, 2000, 6900</li>
+    </ul>
+  </div>
+
+  <!-- 자가용 -->
+  <div class="location-item">
+    <h4>🚗 자가용</h4>
+    <ul>
+      <li>옥외주차장 이용 시 <strong>마트를 통하여 3층 전통 혼례장</strong>과 연결</li>
+      <li>지하주차장 이용 시 <strong>마트 주변 M지역 주차 후</strong> 3층 전통 혼례장으로 연결</li>
+      <li>📍<strong> 주차장 이용 시 2시간 무료</strong></li>
+    </ul>
+  </div>
+    
+  </div>
+</section>
 
   <footer>
-    <p>문의: example@email.com</p>
+    <p>만든이 : 한사발&채지선</p>
   </footer>
   <script src="js/script.js"></script>
 </body>
