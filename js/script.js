@@ -65,3 +65,76 @@ document.addEventListener("DOMContentLoaded", function () {
       daysContainer.appendChild(dayDiv);
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Masonry는 column-count 방식이므로 별도 초기화 필요 X
+
+  // LightGallery 초기화
+  lightGallery(document.getElementById('lightgallery'), {
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+    download: false,
+  });
+});
+
+//오시는길 적용
+document.addEventListener("DOMContentLoaded", function () {
+  // 토글 버튼 기능
+  const toggleButtons = document.querySelectorAll(".location-toggle-btn");
+  const mapAccount = document.getElementById("map");
+  const sketchAccount = document.getElementById("map-hidden");
+
+  toggleButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      toggleButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      if (button.dataset.target === "map") {
+        mapAccount.classList.remove("hidden");
+        sketchAccount.classList.add("hidden");
+      } else {
+        sketchAccount.classList.remove("hidden");
+        mapAccount.classList.add("hidden");
+      }
+    });
+  });
+});
+
+//마음 전하는 곳 적용
+document.addEventListener("DOMContentLoaded", function () {
+  // 토글 버튼 기능
+  const toggleButtons = document.querySelectorAll(".account-toggle-btn");
+  const groomAccount = document.getElementById("groom-account");
+  const brideAccount = document.getElementById("bride-account");
+
+  toggleButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      toggleButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      if (button.dataset.target === "groom") {
+        groomAccount.classList.remove("hidden");
+        brideAccount.classList.add("hidden");
+      } else {
+        brideAccount.classList.remove("hidden");
+        groomAccount.classList.add("hidden");
+      }
+    });
+  });
+
+  // 복사 버튼 기능
+  const copyButtons = document.querySelectorAll(".copy-btn");
+
+  copyButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const account = button.dataset.account;
+      navigator.clipboard.writeText(account).then(() => {
+        alert("계좌번호가 복사되었습니다!");
+      }).catch(err => {
+        alert("복사에 실패했습니다. 직접 복사해 주세요.");
+        console.error(err);
+      });
+    });
+  });
+});
+
