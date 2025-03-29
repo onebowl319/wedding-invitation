@@ -273,6 +273,11 @@ html {
   margin: 15px 0;
 }
 
+.location-map.hidden
+{
+  display: none;
+}
+
 .form-group {
   margin-bottom: 1rem;
 }
@@ -444,6 +449,6 @@ a {
   border-color: #105719;
 }
 
-.hidden {
+.account-list.hidden {
   display: none;
 }
