@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 400,
     download: false,
     hash: false,
-    closeIcon: true // X 버튼 보이게
+    closable: true,
   });
 });
 
