@@ -83,6 +83,18 @@ document.addEventListener("DOMContentLoaded", function () {
       rotate: false
     }
   });
+
+  // lightGallery가 열릴 때 브라우저 히스토리에 상태 추가
+  galleryEl.addEventListener('lgBeforeOpen', function () {
+    history.pushState({ lightGallery: true }, '', '');
+  });
+
+  // 뒤로가기 이벤트 감지 → lightGallery 닫기
+  window.addEventListener('popstate', function (event) {
+    if (event.state && event.state.lightGallery) {
+      lg.closeGallery();
+    }
+  });
 });
 
 //오시는길 적용
