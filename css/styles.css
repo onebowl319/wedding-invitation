@@ -271,6 +271,7 @@ html {
   font-size: 1.2rem;
   color: #333;
   margin: 15px 0;
+  font-weight: bold;
 }
 
 .location-map.hidden
@@ -304,8 +305,8 @@ a {
 .location-item {
   text-align: left;
   max-width: 600px;
-  margin: 0 auto 30px;
-  padding : 15px;
+  margin: 0 auto 15px;
+  padding : 10px;
 }
 
 .location-item h4 {
@@ -451,4 +452,11 @@ a {
 
 .account-list.hidden {
   display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #555;
+  font-size: 0.9rem;
 }

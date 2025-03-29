@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const daysLeftElement = document.getElementById("days-left");
 
     if (daysLeft > 0) {
-        daysLeftElement.textContent = `사발❤지선의 결혼식이 ${daysLeft}일 남았습니다.`;
+      daysLeftElement.innerHTML = `사발❤지선의 결혼식<br>D-${daysLeft}`;
     } else {
         daysLeftElement.textContent = "결혼식이 끝났습니다.";
     }
