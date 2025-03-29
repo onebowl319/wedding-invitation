@@ -72,10 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // LightGallery 초기화
   lightGallery(document.getElementById('lightgallery'), {
     plugins: [lgZoom, lgThumbnail],
-    speed: 500,
+    speed: 400,
     download: false,
     hash: false,
-    closeIcon: true,
+    closeIcon: true // X 버튼 보이게
   });
 });
 
