@@ -125,10 +125,9 @@
       <a href="images/pic9.jpg" class="grid-item">
         <img src="images/pic9.jpg" alt="사발♥지선의 결혼식">
       </a>
-      <!--
       <a href="images/pic10.jpg" class="grid-item">
         <img src="images/pic10.jpg" alt="사발♥지선의 결혼식">
-      </a>-->
+      </a>
       <a href="images/pic11.jpg" class="grid-item">
         <img src="images/pic11.jpg" alt="사발♥지선의 결혼식">
       </a>
@@ -143,13 +142,16 @@
     <h2>마음 전하는 곳</h2>
   </div>
   <!-- 토글 버튼 -->
+  <!--
   <div class="account-toggle">
     <button class="account-toggle-btn active" data-target="groom">신랑 측</button>
     <button class="account-toggle-btn" data-target="bride">신부 측</button>
   </div>
+  -->
 
   <!-- 신랑 계좌 -->
   <div class="account-list" id="groom-account">
+    <button class="account-toggle-btn" data-target="groom">🤵 신랑 측</button>
     <div class="account-item">
       <strong>신랑 한사발</strong>
       <div class="account-row">
@@ -169,8 +171,12 @@
     </div>
   </div>
 
+  <br>
+  <br>
+
   <!-- 신부 계좌 -->
-  <div class="account-list hidden" id="bride-account">
+  <div class="account-list" id="bride-account">
+    <button class="account-toggle-btn" data-target="bride">👰 신부 측</button>
     <div class="account-item">
       <strong>신부 채지선</strong>
       <div class="account-row">
@@ -190,9 +196,6 @@
     </div>
   </div>
 </section>
-
-
-
 
 <section id="location" class="location-section">
   <div class="intro-text">
@@ -240,17 +243,25 @@
   <!-- 지하철 -->
   <div class="location-item">
     <h4>🚉 지하철</h4>
-    <p>2호선, 8호선 <strong>잠실역 하차</strong> → <strong>4번 출구</strong> → 롯데월드 정문 → 전용 엘리베이터 (3층)</p>
+    <p>2호선, 8호선 <strong>잠실역 하차</strong> → <strong>4번 출구</strong> → <strong>롯데월드 정문 → 전용 엘리베이터 (3층)</strong></p>
   </div>
 
   <!-- 버스 -->
   <div class="location-item">
     <h4>🚌 버스</h4>
-    <p><strong>잠실역, 롯데월드 하차</strong> → 롯데월드 정문 → 전용 엘리베이터 (3층)</p>
+    <p><strong>잠실역, 롯데월드 하차</strong> → <strong>롯데월드 정문 → 전용 엘리베이터 (3층)</strong></p>
     <ul>
       <li><strong>초록(지선):</strong> 3317, 3412, 3414, 4318, 4319</li>
       <li><strong>파랑(간선):</strong> 301, 341, 360, 362</li>
       <li><strong>빨강(광역):</strong> 1007-1, 1100, 1700, 2000, 6900</li>
+    </ul>
+  </div>
+
+  <div class="location-item">
+    <h4>🚌 셔틀 버스 (인천)</h4>
+    <p><strong>가재울역 3번출구 GS앞 출발</strong> → <strong>부평역 부평지구대 앞</strong></p>
+    <ul>
+      <li><strong>버스 정보:</strong> 인천 71바 4380 [대우관광]</li>
     </ul>
   </div>
 

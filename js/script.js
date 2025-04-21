@@ -121,8 +121,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //마음 전하는 곳 적용
+
 document.addEventListener("DOMContentLoaded", function () {
+  
   // 토글 버튼 기능
+  //토글기능 안함
+  /*
   const toggleButtons = document.querySelectorAll(".account-toggle-btn");
   const groomAccount = document.getElementById("groom-account");
   const brideAccount = document.getElementById("bride-account");
@@ -141,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+  */
 
   // 복사 버튼 기능
   const copyButtons = document.querySelectorAll(".copy-btn");
